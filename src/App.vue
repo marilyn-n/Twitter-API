@@ -1,12 +1,17 @@
 <template>
   <div id="app">
+    <ToolBarComponent></ToolBarComponent>
     <router-view/>
   </div>
 </template>
 
 <script>
+import ToolBarComponent from '@/components/ToolBarComponent';
+
 export default {
-  name: 'App'
+  components: {
+    ToolBarComponent,
+  }
 }
 </script>
 
@@ -17,6 +22,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
