@@ -5,9 +5,28 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
-  
+  data () {
+    return {
+      tweets: [],
+    }
+  },
+
+  mounted(){
+    this.getTweets();
+  },
+
+  methods: {
+    getTweets() {
+      axios.get('')
+
+    }
+
+  }
 }
+
 </script>
 
 <style>
